@@ -1,0 +1,13 @@
+[project]
+name = "ewj_hd"
+sdk_version = "0.10.0"
+# The build scripts write default.xex here from private/game (extracted files or package file).
+game_root = "out/xex"
+
+[entrypoint]
+file_path = "out/xex/default.xex"
+out_directory_path = "generated/default"
+includes = []
+# ReXGlue intercepts the direct import veneers; their bodies tail-dispatch via CTR.
+setjmp_address = 0x837E4D40
+longjmp_address = 0x8373DA10

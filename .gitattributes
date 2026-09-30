@@ -1,0 +1,6 @@
+* text=auto
+*.sh text eol=lf
+# rexglue rewrites the manifest with LF; keep the checkout identical so codegen is not re-run.
+*.toml text eol=lf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf

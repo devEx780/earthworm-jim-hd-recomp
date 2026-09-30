@@ -1,0 +1,8 @@
+# Your game files, saves and packaged builds
+private/
+
+# Build and recompilation output
+out/
+generated/
+CMakeUserPresets.json
+*.log
